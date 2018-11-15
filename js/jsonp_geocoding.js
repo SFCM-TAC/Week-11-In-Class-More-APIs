@@ -8,7 +8,7 @@ function requestGeocode(lat, lng) {
   var script = document.createElement('script');
   script.src = "https://nominatim.openstreetmap.org/reverse?lat=" + lat + "&lon=" + lng + "&format=json&json_callback=cb";
   document.body.appendChild(script);
-});
+};
 
 function getUserLocation() {
   navigator.geolocation.getCurrentPosition(function(pos) {
@@ -18,5 +18,5 @@ function getUserLocation() {
 }
 
 window.addEventListener('load', function() {
-  getUserLocation();
-})
+
+});
